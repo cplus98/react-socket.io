@@ -1,1 +1,2 @@
-module-boilerplate
+# react-socket.io
+React + SocketIO + Hooks

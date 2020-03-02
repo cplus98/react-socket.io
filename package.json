@@ -1,5 +1,5 @@
 {
-	"name": "module-boilerplate",
+	"name": "react-socket.io",
 	"version": "0.0.1",
 	"main": "index.ts",
 	"license": "MIT",
