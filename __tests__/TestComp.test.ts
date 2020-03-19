@@ -1,5 +1,5 @@
-import { TestComp } from '../src';
+// import { TestComp } from '../src';
 
-test('Test Component', () => {
-	expect(TestComp('Comp')).toBe('Hello Comp');
-});
+// test('Test Component', () => {
+// 	expect(TestComp('Comp')).toBe('Hello Comp');
+// });
