@@ -1,7 +1,8 @@
 {
 	"name": "react-socket.io",
 	"version": "0.0.1",
-	"main": "index.ts",
+	"main": "lib/index.jsx",
+	"types": "lib/index.d.ts",
 	"license": "MIT",
 	"scripts": {
 		"build": "npx tsc",
