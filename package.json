@@ -1,7 +1,7 @@
 {
 	"name": "react-socket.io",
 	"version": "0.0.1",
-	"main": "lib/index.jsx",
+	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
 	"license": "MIT",
 	"scripts": {
