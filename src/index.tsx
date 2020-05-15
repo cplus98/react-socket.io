@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, useCallback } from 'react';
+import React, { useState, useEffect, useContext, useMemo, useCallback } from 'react';
 import io from 'socket.io-client';
 
 interface SocketList {
@@ -20,7 +20,7 @@ interface useSocketIOResult {
 
 export const useSocketIO = (name: string): useSocketIOResult => {
 	const sockets = useContext(SocketIOContext) as SocketList;
-	const socket = sockets[name];
+	const socket = useMemo(() => sockets[name], [sockets, name]);
 
 	const [, socketChange] = useState(false);
 
