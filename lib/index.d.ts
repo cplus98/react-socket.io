@@ -5,8 +5,9 @@ interface SocketIOProviderProps {
 }
 export declare const SocketIOProvider: ({ children }: SocketIOProviderProps) => JSX.Element;
 interface useSocketIOResult {
-    socket: SocketIOClient.Socket;
+    socket: SocketIOClient.Socket | null;
     connectServer: (uri: string, options: SocketIOClient.ConnectOpts) => void;
+    disconnectServer: () => void;
 }
 export declare const useSocketIO: (name: string) => useSocketIOResult;
 interface useSocketIOEventProps {
