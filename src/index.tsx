@@ -22,7 +22,7 @@ export const SocketIOProvider = ({ children }: SocketIOProviderProps) => {
 
 interface useSocketIOResult {
 	socket: SocketIOClient.Socket | null;
-	connectServer: (uri: string, options: SocketIOClient.ConnectOpts) => void;
+	connectServer: (uri: string, options: SocketIOClient.ConnectOpts) => SocketIOClient.Socket;
 	disconnectServer: () => void;
 }
 
