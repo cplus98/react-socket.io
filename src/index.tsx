@@ -16,7 +16,6 @@ const SocketIOContext = React.createContext<SocketIOContextProps | null>(null);
 
 export const SocketIOProvider = ({ children }: SocketIOProviderProps) => {
 	const [sockets, setSockets] = useState({});
-	console.log('SOCKETS: ', sockets);
 
 	return <SocketIOContext.Provider value={[sockets, setSockets]}>{children}</SocketIOContext.Provider>;
 };
